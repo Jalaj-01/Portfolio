@@ -169,8 +169,8 @@ function App() {
         <section className="section reveal">
           <h2>Positions of Responsibility</h2>
           <ul className="resume-list">
-            <li>Placement Coordinator – IIIT Guwahati</li>
-            <li>Placement Coordinator – SAIT Indore</li>
+            <li>Placement Coordinator – IIIT , Guwahati</li>
+            <li>Placement Coordinator – SAIT ,Indore</li>
           </ul>
         </section>
 
