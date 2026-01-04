@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import emailjs from "emailjs-com";
 import profileImg from "./assets/profile.png";
 import Navbar from "./components/Navbar";
 
@@ -21,6 +22,28 @@ function App() {
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
+
+  // 🔹 EMAILJS HANDLER
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_nljmkju",          
+        "template_e97iv92",         
+        e.target,
+        "RBRrK9U5poM7u3_hh"           
+      )
+      .then(
+        () => {
+          alert("Message sent successfully 🚀");
+          e.target.reset();
+        },
+        () => {
+          alert("Failed to send message 😢");
+        }
+      );
+  };
 
   return (
     <div className="layout">
@@ -84,11 +107,13 @@ function App() {
         {/* ABOUT */}
         <section id="about" className="section reveal">
           <h2>About Me</h2>
-          <p>
-            I am a Full Stack Developer with strong foundations in computer
-            science and hands-on experience in building modern web applications.
-            Currently pursuing my M.Tech in Computer Science.
-          </p>
+          <div className="glass-card">
+            <p>
+              I am a Full Stack Developer with strong foundations in computer
+              science and hands-on experience in building modern web applications.
+              Currently pursuing my M.Tech in Computer Science.
+            </p>
+          </div>
         </section>
 
         {/* EDUCATION */}
@@ -96,12 +121,12 @@ function App() {
           <h2>Education</h2>
 
           <div className="glass-card">
-            <p><strong>M.Tech – Computer Science & Engineering</strong></p>
-            <p>IIIT Guwahati (2025 – 2027)</p>
+            <strong>M.Tech – Computer Science & Engineering</strong>
+            <p>Indian Institute of Information Technology, Guwahati (2025 – 2027)</p>
           </div>
 
           <div className="glass-card">
-            <p><strong>B.Tech – Computer Science & Engineering</strong></p>
+            <strong>B.Tech – Computer Science & Engineering</strong>
             <p>Shri Aurobindo Institute of Technology, Indore (2020 – 2024)</p>
           </div>
         </section>
@@ -114,7 +139,7 @@ function App() {
             <h3>Sarthi – Student Assistance Platform</h3>
             <p className="tech">React · Node.js · MongoDB</p>
             <p>
-              A platform to assist students with academic resources and support.
+              Platform to assist students with academic resources and support.
             </p>
           </div>
 
@@ -122,7 +147,7 @@ function App() {
             <h3>Real-Time Chat Application</h3>
             <p className="tech">React · Node.js · Socket.IO</p>
             <p>
-              A real-time messaging application using socket-based communication.
+              Real-time messaging application using socket-based communication.
             </p>
           </div>
         </section>
@@ -131,7 +156,7 @@ function App() {
         <section className="section reveal">
           <h2>Technical Skills & Interests</h2>
 
-          <div className="skills">
+          <div className="skills-grid glass-card">
             {[
               "C", "Java", "Python", "JavaScript",
               "React", "Angular", "Node.js",
@@ -151,43 +176,56 @@ function App() {
           <h2>Experience</h2>
 
           <div className="glass-card">
-            <p><strong>Web Developer Intern</strong> – Advance Computer Networks</p>
-            <p>
-              Developed responsive web pages and improved UI performance.
-            </p>
+            <strong>Web Developer Intern</strong>
+            <p>Advance Computer Networks</p>
+            <p>Developed responsive web pages and improved UI performance.</p>
           </div>
 
           <div className="glass-card">
-            <p><strong>App Developer Intern</strong> – Bharat Intern</p>
-            <p>
-              Built Android applications using Firebase and Java.
-            </p>
+            <strong>App Developer Intern</strong>
+            <p>Bharat Intern</p>
+            <p>Built Android applications using Firebase and Java.</p>
           </div>
         </section>
 
         {/* RESPONSIBILITIES */}
-        <section className="section reveal">
-          <h2>Positions of Responsibility</h2>
-          <ul className="resume-list">
-            <li>Placement Coordinator – IIIT , Guwahati</li>
-            <li>Placement Coordinator – SAIT ,Indore</li>
-          </ul>
-        </section>
+        <section className="section reveal resume-section">
+  <h2>Positions of Responsibility</h2>
+
+  <div className="glass resume-card">
+    <ul className="resume-list">
+      <li>Placement Coordinator – IIIT Guwahati</li>
+      <li>Placement Coordinator – SAIT Indore</li>
+    </ul>
+  </div>
+</section>
+
 
         {/* ACHIEVEMENTS */}
-        <section className="section reveal">
-          <h2>Achievements & Certifications</h2>
-          <ul className="resume-list">
-            <li>Android App Development – Internshala</li>
-            <li>Blockchain Developer Training – IIT Delhi</li>
-          </ul>
-        </section>
+        <section className="section reveal resume-section">
+  <h2>Achievements & Certifications</h2>
 
-        {/* CONTACT */}
+  <div className="glass resume-card">
+    <ul className="resume-list">
+      <li>Android App Development – Internshala</li>
+      <li>Blockchain Developer Training – IIT Delhi</li>
+    </ul>
+  </div>
+</section>
+
+
+        {/* CONTACT FORM (EMAILJS) */}
         <section id="contact" className="section reveal">
           <h2>Contact</h2>
-          <p>Email: jalajgupta550@gmail.com</p>
-          <p style={{ marginTop: "10px" }}>Phone: +91 7389927777</p>
+
+          <form className="contact-form glass-card" onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="Your Name" required />
+            <input type="email" name="user_email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="4" required />
+            <button type="submit" className="btn primary">
+              Send Message
+            </button>
+          </form>
         </section>
       </main>
     </div>

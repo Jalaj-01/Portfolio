@@ -405,4 +405,155 @@ body {
     padding: 20px;
   }
 }
+/* =====================
+   RESUME SECTIONS
+===================== */
+.resume-section {
+  margin: 6rem 0;
+  max-width: 900px;
+}
 
+.resume-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+/* =====================
+   GLASS CARD
+===================== */
+.resume-card {
+  padding: 24px 28px;
+  border-radius: 18px;
+  margin-bottom: 22px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(106, 169, 255, 0.25);
+}
+
+.resume-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+}
+
+.resume-meta {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-bottom: 10px;
+}
+
+/* =====================
+   SKILLS TAGS
+===================== */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tag {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(106, 169, 255, 0.15);
+  color: #6aa9ff;
+  border: 1px solid rgba(106, 169, 255, 0.3);
+}
+
+/* =====================
+   LIST STYLE
+===================== */
+.resume-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume-list li {
+  margin-bottom: 12px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.resume-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #6aa9ff;
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 768px) {
+  .resume-section {
+    margin: 4rem 0;
+  }
+
+  .resume-section h2 {
+    font-size: 1.8rem;
+  }
+}
+/* =====================
+   RESUME LIST – POLISHED
+===================== */
+
+.resume-section {
+  margin-top: 3.5rem;
+}
+
+.resume-card {
+  margin-top: 1.4rem;
+  padding: 28px 34px;
+  border-radius: 22px;
+  transition: all 0.35s ease;
+}
+
+/* List reset */
+.resume-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each item */
+.resume-list li {
+  position: relative;
+  padding-left: 34px;
+  margin: 14px 0;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+/* Soft glowing bullet */
+.resume-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #6aa9ff;
+  box-shadow: 0 0 10px rgba(106, 169, 255, 0.6);
+}
+
+/* Hover effect */
+.resume-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 50px rgba(106, 169, 255, 0.22);
+}
+
+/* Mobile tuning */
+@media (max-width: 768px) {
+  .resume-card {
+    padding: 22px 20px;
+  }
+
+  .resume-list li {
+    font-size: 0.95rem;
+    padding-left: 30px;
+  }
+}
