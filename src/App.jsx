@@ -150,42 +150,50 @@ function App() {
           <h2>Personal Projects</h2>
 
           <div className="project-card glass">
-            <h3>Sitezy – Full-stack marketplace platform for buying, selling, and customizing websites and applications.</h3>
+            <h3>Sitezy </h3>
+            <p className="tech">MongoDB · Express.js · React.js · Node.js · JavaScript (ES6+) · OAuth · Razorpay · Cloudinary </p>
+            <p>
+              Full-stack marketplace platform for buying, selling, and customizing websites.
+            </p>
+          </div>
+
+          <div className="project-card glass">
+            <h3>Sarthi</h3>
             <p className="tech">React · Node.js · MongoDB</p>
+            <p>
+              Campus Community web platform for IIIT Guwahati students
+            </p>
+          </div>
+
+          <div className="project-card glass">
+            <h3>Sarthi – Student Assistance Platform</h3>
+            <p className="tech">React · Node.js · MongoDB · Socket.IO · Docker</p>
             <p>
               Platform to assist students with academic resources and support.
             </p>
           </div>
 
           <div className="project-card glass">
-            <h3>Sarthi – Student Assistance Platform</h3>
-            <p className="tech">React · Node.js · MongoDB</p>
+            <h3> Buddy– The Exam Portal</h3>
+            <p className="tech">Angular · Spring Boot · Java · MySQL</p>
             <p>
-              Platform to assist students with academic resources and support.
+              Full-stack online examination system.
             </p>
           </div>
 
           <div className="project-card glass">
-            <h3>Sarthi – Student Assistance Platform</h3>
-            <p className="tech">React · Node.js · MongoDB</p>
+            <h3>AI Personal Virtual Voice Assistant</h3>
+            <p className="tech"> Python · AI Logic · Speech Recognition · Text-to-Speech · APIs</p>
             <p>
-              Platform to assist students with academic resources and support.
-            </p>
-          </div>
-
-          <div className="project-card glass">
-            <h3>Sarthi – Student Assistance Platform</h3>
-            <p className="tech">React · Node.js · MongoDB</p>
-            <p>
-              Platform to assist students with academic resources and support.
+              AI-powered voice-enabled desktop assistant.
             </p>
           </div>
 
           <div className="project-card glass">
             <h3>Real-Time Chat Application</h3>
-            <p className="tech">React · Node.js · Socket.IO</p>
+            <p className="tech">Kotlin · Java · XML · Firebase</p>
             <p>
-              Real-time messaging application using socket-based communication.
+              Real-time mobile chat application for Android devices.
             </p>
           </div>
         </section>
