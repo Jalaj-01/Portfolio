@@ -10,24 +10,25 @@ function App() {
           <p className="subtitle">Full Stack Developer</p>
 
           <div className="buttons">
-            <a
-              href="https://drive.google.com/your-resume-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn primary"
-            >
-              View Resume
-            </a>
+  <a
+    href="/resume.pdf"
+    className="btn primary"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Resume
+  </a>
 
-            <a
-              href="https://github.com/your-github-username"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn secondary"
-            >
-              GitHub
-            </a>
-          </div>
+  <a
+    href="https://github.com/Jalaj-01"
+    className="btn secondary"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>
+</div>
+
         </div>
       </main>
 
