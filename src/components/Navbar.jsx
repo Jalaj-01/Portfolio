@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
+// import PreferenceToggle from "./PreferenceToggle";
+
+
+
+
 
 export default function Navbar() {
   const [active, setActive] = useState("about");
@@ -40,6 +45,10 @@ export default function Navbar() {
       <a href="#contact" className={active === "contact" ? "active" : ""}>
         Contact
       </a>
-    </nav>
+
+      {/* <PreferenceToggle /> */}
+
+    </nav >
+    
   );
 }

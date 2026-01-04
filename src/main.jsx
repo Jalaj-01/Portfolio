@@ -3,9 +3,14 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import "./App.css"; // ✅ IMPORTANT
+import PreferenceProvider from "./context/PreferenceProvider";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <PreferenceProvider>
+      <App />
+    </PreferenceProvider>
   </React.StrictMode>
+
+
 );

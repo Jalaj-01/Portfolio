@@ -134,3 +134,12 @@ body {
 .footer a:hover {
   text-decoration: underline;
 }
+[data-theme="light"] {
+  background: radial-gradient(circle at top right, #f2f6ff, #faffe4);
+  color: #111;
+}
+
+[data-theme="light"] .glass {
+  background: rgba(243, 3, 67, 0.7);
+  color: #111;
+}

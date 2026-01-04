@@ -557,3 +557,49 @@ body {
     padding-left: 30px;
   }
 }
+/* =====================
+   HERO UPGRADE
+===================== */
+
+.gradient-text span {
+  background: linear-gradient(135deg, #6aa9ff, #9d7bff, #6aa9ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Subtle glow */
+.hero-title span {
+  text-shadow: 0 0 30px rgba(106, 169, 255, 0.35);
+}
+/* =====================
+   THEME TOGGLE
+===================== */
+
+.theme-toggle {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.25s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255,255,255,0.15);
+}

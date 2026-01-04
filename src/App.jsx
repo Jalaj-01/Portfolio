@@ -94,7 +94,7 @@ function App() {
         <Navbar />
 
         {/* HERO */}
-        <section className="hero reveal">
+        {/* <section className="hero reveal">
           <h1 className="hero-title">
             I’m <span>Jalaj Gupta</span>
           </h1>
@@ -103,6 +103,20 @@ function App() {
             applications.
           </p>
         </section>
+         */}
+
+         <section className="hero reveal">
+  <h1 className="hero-title gradient-text">
+    I’m <span>Jalaj Gupta</span>
+  </h1>
+
+  <p className="hero-subtitle">
+    Full Stack Developer building modern, scalable and user-focused web applications.
+  </p>
+
+  
+</section>
+
 
         {/* ABOUT */}
         <section id="about" className="section reveal">
@@ -134,6 +148,30 @@ function App() {
         {/* PROJECTS */}
         <section id="projects" className="section reveal">
           <h2>Personal Projects</h2>
+
+          <div className="project-card glass">
+            <h3>Sarthi – Student Assistance Platform</h3>
+            <p className="tech">React · Node.js · MongoDB</p>
+            <p>
+              Platform to assist students with academic resources and support.
+            </p>
+          </div>
+
+          <div className="project-card glass">
+            <h3>Sarthi – Student Assistance Platform</h3>
+            <p className="tech">React · Node.js · MongoDB</p>
+            <p>
+              Platform to assist students with academic resources and support.
+            </p>
+          </div>
+
+          <div className="project-card glass">
+            <h3>Sarthi – Student Assistance Platform</h3>
+            <p className="tech">React · Node.js · MongoDB</p>
+            <p>
+              Platform to assist students with academic resources and support.
+            </p>
+          </div>
 
           <div className="project-card glass">
             <h3>Sarthi – Student Assistance Platform</h3>
