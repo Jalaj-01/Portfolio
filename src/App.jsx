@@ -150,7 +150,7 @@ function App() {
           <h2>Personal Projects</h2>
 
           <div className="project-card glass">
-            <h3>Sarthi – Student Assistance Platform</h3>
+            <h3>Sitezy – Full-stack marketplace platform for buying, selling, and customizing websites and applications.</h3>
             <p className="tech">React · Node.js · MongoDB</p>
             <p>
               Platform to assist students with academic resources and support.
@@ -197,10 +197,10 @@ function App() {
           <div className="skills-grid glass-card">
             {[
               "C", "Java", "Python", "JavaScript",
-              "React", "Angular", "Node.js",
+              "React", "Kotlin", "Node.js",
               "MongoDB", "MySQL", "Firebase",
               "Docker", "Git", "GitHub",
-              "Distributed Systems", "Web Development"
+              "OOPs", "Docker","Supabase","HTML","CSS",
             ].map((skill) => (
               <span key={skill} className="skill-chip">
                 {skill}
