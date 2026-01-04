@@ -166,14 +166,6 @@ function App() {
           </div>
 
           <div className="project-card glass">
-            <h3>Sarthi – Student Assistance Platform</h3>
-            <p className="tech">React · Node.js · MongoDB · Socket.IO · Docker</p>
-            <p>
-              Platform to assist students with academic resources and support.
-            </p>
-          </div>
-
-          <div className="project-card glass">
             <h3> Buddy– The Exam Portal</h3>
             <p className="tech">Angular · Spring Boot · Java · MySQL</p>
             <p>
